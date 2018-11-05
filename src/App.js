@@ -11,20 +11,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      todos: [
-        {
-          id: 1,
-          description: 'Create component',
-        },
-        {
-          id: 2,
-          description: 'Use component',
-        },
-        {
-          id: 3,
-          description: 'Add state to component',
-        }
-      ],
+      todos: [],
     };
   }
 
