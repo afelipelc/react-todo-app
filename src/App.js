@@ -28,10 +28,22 @@ class App extends Component {
     };
   }
 
+  handleAddTask = (task) => {
+    const { todos } = this.state;
+    todos.push(task);
+
+    //update state
+    this.setState({
+      todos,
+    });
+  }
+
   render() {
     return (
       <div className="App">
-        <CreateTask />
+        <CreateTask
+          addTask={this.handleAddTask}
+        />
         <TaskList
           todos={this.state.todos}
         />
